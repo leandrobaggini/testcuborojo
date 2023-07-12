@@ -1,47 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Locaciones Carhue</title>
-
-    <!-- A-Frame itself -->
+<title>Testing Locaciones Carhue ar js</title>
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-<!-- Pure three.js code that the A-Frame components use for location-based AR -->
 <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
-<!-- AR.js A-Frame components -->
 <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
 </head>
-
-<body style="margin: 0; overflow: hidden;">
-    <!--<script>
-        AFRAME.registerComponent('locationfinder', {
-            init: function() {
-                navigator.geolocation.getCurrentPosition(function(location){
-                    console.log(location)
-                })
-            }
-        })
-    </script>-->
-    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-        <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-        <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: -31.24722488>; longitude: -61.48661345" scale="10 10 10"></a-entity>
-    </a-scene>
-
-    
-  <!--<a-scene embedded arjs="source: webcam;">-->
-    <!--<a-camera locationfinder gps-camera="simulateLatitude:-31.2461; simulateLongitude: -61.4839" rotation-reader></a-camera>-->
-    <!--<a-camera gps-camera rotation-reader></a-camera>
-    
-
-    <a-text
-    value="Hola soy 1"
-    scale="15 15 15"
-    look-at="[gps-camera]"
-    aling="center"
-    gps-entity-place="latitude: -31.2461; longitude: -61.4839"
-    ></a-text>
-
-  </a-scene>  -->
+<body>
+<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+    <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: -37,1803473141079; longitude: -62,7611669898033" scale="10 10 10"></a-entity>
+</a-scene>
 </body>
 </html>
